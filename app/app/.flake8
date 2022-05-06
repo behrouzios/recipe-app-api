@@ -1,0 +1,7 @@
+[flake8]
+
+exclude=
+  migrations
+  __psycache__,
+  manage.py,
+  settings.py
