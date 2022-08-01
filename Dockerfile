@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-MAINTAINER London App Developer Ltd.
+# MAINTAINER London App Developer Ltd.
 
 ENV PYTHONUNBUFFERED 1
 
@@ -12,5 +12,10 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-RUN adduser -D user
-USER user
+
+#adding new user to not let running the rogram from root
+# RUN adduser -D user 
+# #running the user
+# USER user
+
+
